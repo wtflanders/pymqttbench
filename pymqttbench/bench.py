@@ -226,11 +226,11 @@ def main():
             raise Exception('Timed out waiting for threads to return')
 
     # Let's do some maths
-    if SUB_QUEUE.qsize < opts.sub_clients:
+    if SUB_QUEUE.qsize() < opts.sub_clients:
         print('Something went horribly wrong, there are less results than '
               'sub threads')
         exit(1)
-    if PUB_QUEUE.qsize < opts.pub_clients:
+    if PUB_QUEUE.qsize() < opts.pub_clients:
         print('Something went horribly wrong, there are less results than '
               'pub threads')
         exit(1)
