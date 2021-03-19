@@ -16,7 +16,7 @@ The easiest way to install pymqttbench is use pip::
 
 Alternatively you can clone the repo with::
 
-    git clone https://github.com/mtreinish/pymqttbench.git
+    git clone https://github.com/wtflanders/pymqttbench.git
 
 then install it using pip::
 
